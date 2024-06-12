@@ -1,0 +1,72 @@
+[
+  {
+      "Nome": "Carrinho de Bebê Deluxe",
+      "Categoria": "Baby",
+      "Valor": 799.99,
+      "Id": 1,
+      "Rating": 4
+  },
+  {
+      "Nome": "Bola de Futebol Profissional",
+      "Categoria": "esportes",
+      "Valor": 120.00,
+      "Id": 2,
+      "Rating": 5
+  },
+  {
+      "Nome": "Vinho Italiano Premium",
+      "Categoria": "Importados",
+      "Valor": 250.00,
+      "Id": 3,
+      "Rating": 4
+  },
+  {
+      "Nome": "Smartphone Top de Linha",
+      "Categoria": "tecnologia",
+      "Valor": 3999.90,
+      "Id": 4,
+      "Rating": 5
+  },
+  {
+      "Nome": "Fantasia de Super-Herói",
+      "Categoria": "fantasias",
+      "Valor": 199.90,
+      "Id": 5,
+      "Rating": 3
+  },
+  {
+      "Nome": "Console de Video Game",
+      "Categoria": "jogos",
+      "Valor": 2999.00,
+      "Id": 6,
+      "Rating": 5
+  },
+  {
+      "Nome": "Chupeta Ortodôntica",
+      "Categoria": "Baby",
+      "Valor": 19.90,
+      "Id": 7,
+      "Rating": 4
+  },
+  {
+      "Nome": "Raquete de Tênis Profissional",
+      "Categoria": "esportes",
+      "Valor": 599.90,
+      "Id": 8,
+      "Rating": 5
+  },
+  {
+      "Nome": "Perfume Francês Exclusivo",
+      "Categoria": "Importados",
+      "Valor": 899.90,
+      "Id": 9,
+      "Rating": 4
+  },
+  {
+      "Nome": "Notebook Ultrafino",
+      "Categoria": "tecnologia",
+      "Valor": 4999.00,
+      "Id": 10,
+      "Rating": 4
+  }
+]

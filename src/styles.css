@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #e4e4e4;
+}
+
+header {
+    background-color:#fff;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-item {
+    font-size: 30px;
+}
+
+input[type="search"] {
+    padding: 5px 200px;
+}
+
+.fav, .car, .conta, .zap {
+    font-size: 15px;
+}

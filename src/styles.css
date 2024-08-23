@@ -8,9 +8,14 @@ body {
 }
 
 header {
+    margin: 15px 15px;
     background-color:#fff;
+    padding: 10px;
+    border-radius: 70px;
+    box-shadow: #646464 7px 7px 10px;
 }
 
+/* lista do menu */
 ul {
     display: flex;
     list-style: none;
@@ -19,14 +24,28 @@ ul {
     align-items: center;
 }
 
-.menu-item {
-    font-size: 30px;
+/* logo */
+.logo {
+    margin: 5px 0px;
+    width: 120px;
+    height: 65px;   
+}
+
+.botao-cat {
+    padding: 5px;
+    border: solid 1px #000;
+    border-radius: 20px;
+    background-color: #def10f;
+}
+
+/* Barra de Pesquisa */
+
+/* icones do menu */
+li img {
+    width: 40px;
+    height: 40px;
 }
 
 input[type="search"] {
     padding: 5px 200px;
-}
-
-.fav, .car, .conta, .zap {
-    font-size: 15px;
 }

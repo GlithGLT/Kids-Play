@@ -5,14 +5,19 @@
 
 body {
     background-color: #e4e4e4;
+    padding-bottom: 1000px;
 }
 
+/* Menu */
 header {
-    margin: 15px 15px;
+    width: 95%;
+    margin: 25px auto;
     background-color:#fff;
     padding: 10px;
     border-radius: 70px;
-    box-shadow: #646464 7px 7px 10px;
+    box-shadow: #b5adad 1px 5px 6px 2px;
+    position: fixed;
+    left: 30px;
 }
 
 /* lista do menu */
@@ -35,10 +40,37 @@ ul {
     padding: 5px;
     border: solid 1px #000;
     border-radius: 20px;
-    background-color: #def10f;
+    background-color: #fff855;
 }
 
 /* Barra de Pesquisa */
+.barra-pesquisa {
+    background-color: #fff855;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.lupa {
+    width: 30px;
+    height: 30px;
+    margin: 0px 7px;
+}
+
+input[type="search"] {
+    padding: 5px 0px;
+    width: 500px;
+    border: 0px;
+    font-size: 20px;
+    outline-style: none;
+    background-color: #fff855;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
 
 /* icones do menu */
 li img {
@@ -46,6 +78,4 @@ li img {
     height: 40px;
 }
 
-input[type="search"] {
-    padding: 5px 200px;
-}
+

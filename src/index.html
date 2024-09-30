@@ -18,7 +18,7 @@
             <img src="/src/Imagens-Kids-Play/logo.png" alt="" id="logo">
         </li>
         <li>
-            <img src="/src/Imagens-Kids-Play/categorias.png" alt="" class="categorias">
+            <img src="/src/Imagens-Kids-Play/categorias.png" alt="" class="categorias" id="botao-categorias">
         </li>
         <li class="barra">
             <img src="/src/Imagens-Kids-Play/lupa.png" alt="" class="lupa">
@@ -137,6 +137,28 @@
   </div>
 </div>
 
+  <!-- Retângulo com opções que será exibido -->
+  <div id="options-rectangle">
+    <div class="option"><img src="/src/Imagens-Kids-Play/icon-bebê.png" alt="" class="icons-categorias">Baby</div>
+    <div class="option"><img src="/src/Imagens-Kids-Play/icon-bolas.png" alt="" class="icons-categorias">Esportes</div>
+    <div class="option"><img src="/src/Imagens-Kids-Play/icon-avião.png" alt="" class="icons-categorias">Importados</div>
+    <div class="option"><img src="/src/Imagens-Kids-Play/icon-lâmpada.png" alt="" class="icons-categorias">Tecnologia</div>
+    <div class="option"><img src="/src/Imagens-Kids-Play/icon-fantasia.png" alt="" class="icons-categorias">Fantasias</div>
+    <div class="option"><img src="/src/Imagens-Kids-Play/icon-controle.png" alt="" class="icons-categorias">Jogos</div>
+  </div>
 
+  <!-- JavaScript -->
+  <script>
+    // Função que mostra o retângulo quando o botão é clicado
+    document.getElementById('botao-categorias').addEventListener('click', function() {
+      var rectangle = document.getElementById('options-rectangle');
+      if (rectangle.style.display === 'none' || rectangle.style.display === '') {
+        rectangle.style.display = 'block'; // Mostrar o retângulo
+      } else {
+        rectangle.style.display = 'none'; // Esconder o retângulo se já estiver visível
+      }
+    });
+  </script>
+  
 </body>
 </html>

@@ -12,128 +12,149 @@
 <body>
 
 <div class="main-content">
+    <!-- NavBar -->
   <nav>
     <ul class="menu">
+        <!-- Logo -->
         <li>
-            <img src="/src/Imagens-Kids-Play/logo.png" alt="" id="logo">
+            <a href="/src/index.html">
+                <img src="/src/Imagens-Kids-Play/logo.png" alt="" id="logo">
+            </a>
         </li>
+        <!-- Botão das Categorias -->
         <li>
             <img src="/src/Imagens-Kids-Play/categorias.png" alt="" class="categorias" id="botao-categorias">
         </li>
+        <!-- Campo de Pesquisa -->
         <li class="barra">
             <img src="/src/Imagens-Kids-Play/lupa.png" alt="" class="lupa">
             <input type="search" placeholder="Ache o que está procurando aqui ;)" class="campo-pesquisa">
         </li>
+        <!-- Favoritos -->
         <li>
-            <img src="/src/Imagens-Kids-Play/icon-coração.png" alt="" class="itens-menus icons">
+            <a href="/src/favoritos.html">
+                <img src="/src/Imagens-Kids-Play/icon-coração.png" alt="" class="itens-menus icons">
+            </a>
         </li>
+        <!-- Carrinho de Compras -->
         <li>
             <img src="/src/Imagens-Kids-Play/icon-carrinho-de-compras.png" alt="" class="itens-menus icons">
         </li>
+        <!-- Contas -->
         <li>
-            <img src="/src/Imagens-Kids-Play/icon-user.png" alt="" class="itens-menus icons">
+            <img src="/src/Imagens-Kids-Play/icon-user.png" alt="" class="itens-menus icons" id="user">
         </li>
+        <!-- Contato -->
         <li>
-            <img src="/src/Imagens-Kids-Play/icon-whatsapp.png" alt="" class="itens-menus icons">
+            <img src="/src/Imagens-Kids-Play/icon-whatsapp.png" alt="" class="itens-menus icons" id="zap">
         </li>
     </ul>
   </nav>
 </div>
 
+<!-- Produtos -->
 <div class="conteint">
   <div class="products">
-      <div class="product">
-          <div class="product-image" id="img1"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 1</p>
-          </div>
-              <p class="preco">R$99,99</p>
-              <div id="fav-image" class="icons-images fav"></div>
-              <div id="car-image" class="icons-images car"></div>
-      </div>
-
-      <div class="product">
-          <div class="product-image" id="img2"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 2</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-
-      <div class="product">
-          <div class="product-image" id="img3"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 3</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img4"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 4</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img5"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 5</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img6"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 6</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img7"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 7</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img8"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 8</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img9"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 9</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
-      <div class="product">
-          <div class="product-image" id="img10"></div>
-          <div class="name-product">
-              <p class="nome">Brinquedo 10</p>
-          </div>
-          <p class="preco">R$99,99</p>
-          <div id="fav-image" class="icons-images fav"></div>
-          <div id="car-image" class="icons-images car"></div>
-      </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img1"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 1</p>
+        </div>
+            <p class="preco">R$99,99</p>
+            <div id="fav-image" class="icons-images fav"></div>
+            <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img2"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 2</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img3"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 3</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img4"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 4</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img5"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 5</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img6"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 6</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img7"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 7</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img8"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 8</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img9"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 9</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
+    <!-- Produto -->
+    <div class="product">
+        <div class="product-image" id="img10"></div>
+        <div class="name-product">
+            <p class="nome">Brinquedo 10</p>
+        </div>
+        <p class="preco">R$99,99</p>
+        <div id="fav-image" class="icons-images fav"></div>
+        <div id="car-image" class="icons-images car"></div>
+    </div>
   </div>
 </div>
 

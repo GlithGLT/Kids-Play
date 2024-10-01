@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Fundo Branco */
+.conteint {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Fonte para o Menu */
+@font-face {
+    font-family: roboto;
+    src: url(/src/Fontes/Roboto-Regular.ttf);
+}
+
+/* Menu de opções */
+.menu-options-fav {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Opções do Menu */
+.item-menu-option-fav {
+    font-size: 27px;
+    font-family: roboto;
+    font-weight: 300;
+    background-color: #fff96f;
+    color: #121212;
+    width: 350px;
+    text-align: center;
+    margin: 6px;
+    padding: 7px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.favoritos {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    color: white;
+}

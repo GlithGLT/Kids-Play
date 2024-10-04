@@ -8,8 +8,8 @@
 .conteint {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /* Fonte para o Menu */
@@ -20,11 +20,11 @@
 
 /* Menu de opções */
 .menu-options-fav {
-    margin-top: 40px;
+    margin: 80px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #e6e6e6;
     padding: 10px;
@@ -45,10 +45,47 @@
     border: 3px solid black;
     border-radius: 10px;
 }
+.item-menu-option-fav:last-child {
+    background-color: #fff41a;
+}
 
 .favoritos {
-    background-color: blue;
+    margin: 80px;
+    background-color: rgb(165, 165, 165);
     width: 300px;
     height: 300px;
     color: white;
+}
+
+.btn-voltar {
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 40px;
+    background-color: white;
+    padding: 0px 7px 0px 0px;
+}
+
+/* Botão Voltar */
+.seta-texto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Seta do Botão Voltar */
+.seta-l {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 50%;
+    background-color: #fff41a;
+}
+/* Texto do botão voltar */
+.voltar {
+    padding-left: 3px;
+    font-family: roboto;
+    font-size: 24px;
+    color: #121212;
 }

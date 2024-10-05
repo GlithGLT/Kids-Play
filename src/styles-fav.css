@@ -20,7 +20,7 @@
 
 /* Menu de opções */
 .menu-options-fav {
-    margin: 80px;
+    margin: 65px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -49,20 +49,19 @@
     background-color: #fff41a;
 }
 
+/* Fundo dos favoritos */
 .favoritos {
-    margin: 80px;
-    background-color: rgb(165, 165, 165);
-    width: 300px;
-    height: 300px;
+    margin-top: 65px;
     color: white;
 }
 
 .btn-voltar {
     border: 2px solid black;
+    border-left: none;
     display: inline-block;
     border-radius: 40px;
     background-color: white;
-    padding: 0px 7px 0px 0px;
+    padding: 0px 8px 0px 0px;
 }
 
 /* Botão Voltar */
@@ -74,18 +73,52 @@
 
 /* Seta do Botão Voltar */
 .seta-l {
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     padding: 5px;
     border: 2px solid black;
-    border-left: none;
     border-radius: 50%;
-    background-color: #fff41a;
+    background-color: #fff53b;
 }
 /* Texto do botão voltar */
 .voltar {
     padding-left: 3px;
     font-family: roboto;
-    font-size: 24px;
+    font-size: 28px;
     color: #121212;
+    font-weight: 900;
+}
+
+/* Titulo da pagina */
+.titulo-pag {
+    color: black;
+    font-family: roboto;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+/* Sem Brinquedos */
+.no-toys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.no-toys img {
+    height: 200px;
+    width: 220px;
+}
+
+/* Texto sem brinquedos */
+.texto-no-toys {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(188, 188, 188, 0.5);
+    border-radius: 50%;
+    max-width: 480px;
+    padding: 50px;
+    backdrop-filter: blur(20px);
+    -wekbit-backdrop-filter: blur(20px) ;
 }

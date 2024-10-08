@@ -107,7 +107,6 @@ body {
 .conteint {
     background-color: #fff;
     margin: 120px 100px 0px 100px;
-    height: 100vh;
     border-radius: 20px 20px 0px 0px;
     padding-bottom: 30px;
     border: 1px solid rgb(189, 186, 186);
@@ -121,6 +120,12 @@ body {
     background-position: center;
     background-size: cover;
     border: 1px solid gray;
+    transition: 200ms linear;
+}
+.product-image:hover {
+    cursor: pointer;
+    transform:translate(0px, -2px);
+    border: 3px solid #edb600;
 }
 
 /* todos os produtos / card */
@@ -137,8 +142,8 @@ body {
     width: 18.5%;
     display: inline-block;
     margin: 25px 4px;
-    border-radius: 20px;
     position: relative;
+    transition: 200ms linear;
 }
 
 #img1 {

@@ -1,0 +1,54 @@
+/* Detalhes */
+.detalhes {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    margin: 50px;
+    /* border: 2px solid black; */
+}
+
+/* Mini Imagens na Esquerda */
+.mini-imgs-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Fotos das Minis Imagens na Esquerda */
+.one-mini-img-left {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: -8px 8px 5px #d3d3d3;
+}
+#mini-img-1 {
+    background-image: url('/src/Imagens-Kids-Play/brinquedo-celular.jpg');
+}
+#mini-img-2 {
+    background-image: url('/src/Imagens-Kids-Play/foto2-exemplo1.jpg');
+}
+#mini-img-3 {
+    background-image: url('/src/Imagens-Kids-Play/foto3-exemplo1.jpg');
+}
+#mini-img-4 {
+    background-image: url('/src/Imagens-Kids-Play/foto4-exemplo1.jpg');
+}
+#mini-img-5 {
+    background-image: url('/src/Imagens-Kids-Play/foto5-exemplo1.jpg');
+}
+#mini-img-6 {
+    background-image: url('/src/Imagens-Kids-Play/foto6-exemplo1.jpg');
+}
+
+/* Imagem Principal */
+.img-principal {
+    background-image: url('/src/Imagens-Kids-Play/brinquedo-celular.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: -8px 8px 5px #aeaeae;
+}

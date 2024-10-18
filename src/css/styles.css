@@ -8,7 +8,6 @@ body {
     background-color: #e4e4e4;
 }
 
-
 /* navbar */
 .menu {
     display: flex;
@@ -261,3 +260,4 @@ body {
 .option:hover {
     background-color: #fff648;
 }
+

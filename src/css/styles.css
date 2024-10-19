@@ -8,6 +8,11 @@ body {
     background-color: #e4e4e4;
 }
 
+@font-face {
+    font-family: roboto;
+    src: url(/src/Fontes/Roboto-Regular.ttf);
+}
+
 /* navbar */
 .menu {
     display: flex;

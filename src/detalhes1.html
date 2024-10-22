@@ -50,49 +50,90 @@
         </li>
     </ul>
   </nav>
-<!-- Detalhes do Produto -->
-<div class="conteint">
-    <div class="detalhes">
-        <!-- Mini Imagens na Esquerda -->
-        <ul class="mini-imgs-left">
-            <li class="one-mini-img-left" id="mini-img-1"></li>
-            <li class="one-mini-img-left" id="mini-img-2"></li>
-            <li class="one-mini-img-left" id="mini-img-3"></li>
-            <li class="one-mini-img-left" id="mini-img-4"></li>
-            <li class="one-mini-img-left" id="mini-img-5"></li>
-            <li class="one-mini-img-left" id="mini-img-6"></li>
-        </ul>
-        <!-- Imagem Principal -->
-        <div class="img-principal"></div>
-        <!-- Opções na Direita -->
-        <div class="options-right">
-            <!-- Nome e Avaliação -->
-            <div class="nome-avaliacao">
-                <h3 class="nome-produto">Exemplo Telefone Baby Care</h3>
-                <div class="estrelas"></div>
-            </div>
-            <div class="add-to-fav"></div>
-            <!-- Botão Adicionar aos Favoritos -->
-            <!-- Preços -->
-            <div class="precos">
-                <h3 class="preco">R$39,99</h3>
-                <h4 class="preco-parcelado">Por 2x R$19,99</h4>
-            </div>
-            <!-- Linha -->
-            <div class="linha"></div>
-            <div class="botao-add-to-car-div">
-                <h3 class="botao-add-to-car">Adicionar ao Carrinho</h3>
+    <!-- Detalhes do Produto -->
+    <div class="conteint">
+        <div class="detalhes">
+            <!-- Mini Imagens na Esquerda -->
+            <ul class="mini-imgs-left">
+                <li class="one-mini-img-left" id="mini-img-1"></li>
+                <li class="one-mini-img-left" id="mini-img-2"></li>
+                <li class="one-mini-img-left" id="mini-img-3"></li>
+                <li class="one-mini-img-left" id="mini-img-4"></li>
+                <li class="one-mini-img-left" id="mini-img-5"></li>
+                <li class="one-mini-img-left" id="mini-img-6"></li>
+            </ul>
+            <!-- Imagem Principal -->
+            <div class="img-principal"></div>
+            <!-- Opções na Direita -->
+            <div class="options-right">
+                <!-- Nome e Avaliação -->
+                <div class="nome-avaliacao">
+                    <h3 class="nome-produto">Exemplo Telefone Baby Care</h3>
+                    <div class="estrelas"></div>
+                </div>
+                <div class="add-to-fav"></div>
+                <!-- Botão Adicionar aos Favoritos -->
+                <!-- Preços -->
+                <div class="precos">
+                    <h3 class="preco">R$39,99</h3>
+                    <h4 class="preco-parcelado">Por 2x R$19,99</h4>
+                </div>
+                <!-- Linha -->
+                <div class="linha"></div>
+                <div id="botao-add-to-car-div">
+                    <h3 id="botao-add-to-car">Adicionar ao Carrinho</h3>
+                </div>
             </div>
         </div>
+        <hr class="linha2">
+        <h1 class="interesses">Pode ser do seu interesse</h1>
+        <ul class="imgs-interesses">
+            <li class="item-interesses" id="interesse1"></li>
+            <li class="item-interesses" id="interesse2"></li>
+            <li class="item-interesses" id="interesse3"></li>
+            <li class="item-interesses" id="interesse4"></li>
+            <li class="item-interesses" id="interesse5"></li>
+        </ul>
     </div>
-    <hr class="linha2">
-    <h1 class="interesses">Pode ser do seu interesse</h1>
-    <ul class="imgs-interesses">
-        <li class="item-interesses" id="interesse1"></li>
-        <li class="item-interesses" id="interesse2"></li>
-        <li class="item-interesses" id="interesse3"></li>
-        <li class="item-interesses" id="interesse4"></li>
-        <li class="item-interesses" id="interesse5"></li>
-    </ul>
-</div>
+    <!-- Sobreposição Cinza do Carrinho -->
+    <div id="overlay"></div>
+    <!-- Carrinho de Compras -->
+    <div id="cart">
+        <ul>
+            <li>aaaaaaaaaa</li>
+            <li>aaaaaaaaaa</li>
+            <li>aaaaaaaaaa</li>
+            <li>aaaaaaaaaa</li>
+        </ul>
+    </div>
+
+    <script>
+    // Função para abrir/fechar o carrinho
+    document.getElementById('botao-add-to-car').addEventListener('click', function() {
+        var cart = document.getElementById('cart');
+        var overlay = document.getElementById('overlay');
+        
+        // Verifica se o carrinho está oculto ou visível
+        if (cart.style.right === '-320px') {
+            cart.style.right = '0'; // Move o carrinho para dentro da tela
+            overlay.style.display = 'block'; // Mostra a sobreposição cinza
+        } else {
+            cart.style.right = '-320px'; // Move o carrinho para fora da tela
+            setTimeout(function() {
+                overlay.style.display = 'none'; // Esconde a sobreposição após o carrinho sair
+            }, 300);
+        }
+    });
+
+    // Fechar o carrinho ao clicar na sobreposição
+    document.getElementById('overlay').addEventListener('click', function() {
+        var cart = document.getElementById('cart');
+        var overlay = document.getElementById('overlay');
+
+        cart.style.right = '-320px'; // Move o carrinho para fora da tela
+        setTimeout(function() {
+            overlay.style.display = 'none'; // Esconde a sobreposição após o carrinho sair
+        }, 300);
+    });
+    </script>
 </div>

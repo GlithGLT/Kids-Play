@@ -186,28 +186,99 @@
     background-image: url('/src/Imagens-Kids-Play/Brinquedo5.jpeg');
 }
 
-/* Estilos para a aba do carrinho */
+/* Carrinho em si com o fundo branco*/
 #cart {
-    width: 300px;
-    height: 100vh;
+    width: 380px;
+    height: 100vh; /* Ocupar toda a altura da tela */
     background-color: white;
     position: fixed;
     top: 0;
-    right: -320px;
-    transition: right 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    right: 0;
+    display: none; /* Inicia oculto */
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     z-index: 1000;
 }
 
-/* Estilos para a sobreposição cinza */
+/* Sobreposição cinza */
 #overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none; /* Escondido inicialmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Cinza transparente */
+    display: none; /* Inicia oculto */
     z-index: 500;
+}
+
+/* Título do carrinho */
+.meu-carrinho {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+.icon-car {
+    width: 45px;
+    height: 45px;
+}
+.titulo-carrinho {
+    font-size: 36px;
+}
+
+/* Produtos do Carrinho */
+.produtos-carrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+/* Produto solo no carrinho */
+.produto-solo {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'img-produto-car';
+}
+
+/* Imagem do produto no carrinho */
+.img-produto-car {
+    grid-area: img-produto-car;
+    width: 100px;
+    height: 100px;
+    background-image: url('/src/Imagens-Kids-Play/brinquedo-celular.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: -8px 8px 5px #d3d3d3;
+}
+
+/* Nome do produto */
+.nome-produto-car {
+    font-size: 20px;
+}
+
+/* Opção Mais e Menos */
+.icons-mais-menos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Imagem do icone de Lixo */
+.icon-lixo {
+    width: 50px;
+    height: 50px;
+    background-image: url('/src/Imagens-Kids-Play/icon-lixo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Preço do produto no carrinho */
+.preco-produto-car {
+    font-size: 25px;
 }

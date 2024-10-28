@@ -95,33 +95,51 @@
             <li class="item-interesses" id="interesse5"></li>
         </ul>
     </div>
-    <!-- Sobreposição Cinza do Carrinho -->
+
+    <!-- Parte Cinza quando clica em adicinar ao carrinho -->
     <div id="overlay"></div>
+
     <!-- Carrinho de Compras -->
     <div id="cart">
-        <ul>
-            <li>aaaaaaaaaa</li>
-            <li>aaaaaaaaaa</li>
-            <li>aaaaaaaaaa</li>
-            <li>aaaaaaaaaa</li>
-        </ul>
+        <!-- Título Meu Carrinho -->
+        <div class="meu-carrinho">
+            <img src="/src/Imagens-Kids-Play/icon-carrinho-de-compras.png" class="icon-car">
+            <h1 class="titulo-carrinho">Meu Carrinho</h1>
+        </div>
+        <!-- Produtos do Carrinho -->
+        <div class="produtos-carrinho">
+            <div class="produto-solo">
+                <!-- Imagem do Produto no Carrinho -->
+                <div class="img-produto-car"></div>
+                <!-- Nome do Produto -->
+                <p class="nome-produto-car">Exemplo Baby Care - Exemplo</p>
+                <!-- Opção de aumentar ou diminuir a quantidade -->
+                <p class="icons-mais-menos">
+                    <p class="icon-mais-menos">-</p>
+                    <p class="icon-mais-menos">1</p>
+                    <p class="icon-mais-menos">+</p>
+                </p>
+                <!-- Icone lata de lixo para remover o produto do carrinho -->
+                <div class="icon-lixo"></div>
+                <!-- Preço do Produto -->
+                <div class="preco-produto-car">R$39,99</div>
+            </div>
+        </div>
     </div>
 
-    <script>
+<script>
     // Função para abrir/fechar o carrinho
     document.getElementById('botao-add-to-car').addEventListener('click', function() {
         var cart = document.getElementById('cart');
         var overlay = document.getElementById('overlay');
         
-        // Verifica se o carrinho está oculto ou visível
-        if (cart.style.right === '-320px') {
-            cart.style.right = '0'; // Move o carrinho para dentro da tela
+        // Alterna entre mostrar e esconder o carrinho e a sobreposição
+        if (cart.style.display === 'none' || cart.style.display === '') {
+            cart.style.display = 'block'; // Exibe o carrinho
             overlay.style.display = 'block'; // Mostra a sobreposição cinza
         } else {
-            cart.style.right = '-320px'; // Move o carrinho para fora da tela
-            setTimeout(function() {
-                overlay.style.display = 'none'; // Esconde a sobreposição após o carrinho sair
-            }, 300);
+            cart.style.display = 'none'; // Esconde o carrinho
+            overlay.style.display = 'none'; // Esconde a sobreposição
         }
     });
 
@@ -130,10 +148,8 @@
         var cart = document.getElementById('cart');
         var overlay = document.getElementById('overlay');
 
-        cart.style.right = '-320px'; // Move o carrinho para fora da tela
-        setTimeout(function() {
-            overlay.style.display = 'none'; // Esconde a sobreposição após o carrinho sair
-        }, 300);
+        cart.style.display = 'none'; // Esconde o carrinho
+        overlay.style.display = 'none'; // Esconde a sobreposição
     });
-    </script>
+</script>
 </div>

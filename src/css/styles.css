@@ -39,12 +39,6 @@ body {
     height: 70px;
 }
 
-/* itens do menu */
-.itens-menus {
-    max-width: 100px;
-    max-height: 70px;
-}
-
 /* botão categorias */
 .categorias {
     width: 150px;

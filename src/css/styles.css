@@ -115,6 +115,7 @@ body {
     height: 350px;
     width: 100%;
     margin-bottom: 3px;
+    border-radius: 10px;
     background-position: center;
     background-size: cover;
     border: 1px solid gray;

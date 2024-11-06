@@ -8,7 +8,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="/src/css/styles.css">
   <link rel="stylesheet" href="/src/css/styles-detalhes.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 <div class="main-content">
@@ -108,28 +107,112 @@
         </div>
         <!-- Produtos do Carrinho -->
         <div class="produtos-carrinho">
+            <!-- Produto 1 -->
             <div class="produto-solo">
                 <!-- Imagem do Produto no Carrinho -->
-                <div class="img-produto-car"></div>
+                <div class="img-produto-car" id="img-car-1"></div>
+
                 <!-- Nome do Produto -->
                 <p class="nome-produto-car">Exemplo Telefone Baby Care</p>
+
                 <!-- Opção de aumentar ou diminuir a quantidade -->
                 <div class="icons-mais-menos">
                     <div class="icon-menos fundo-amar"></div>
                     <p class="quantidade fundo-amar">1</p>
                     <div class="icon-mais fundo-amar"></div>
                 </div>
+
                 <!-- Icone lata de lixo para remover o produto do carrinho -->
-                <div class="icon-lixo"></div>
+                 <div class="area-lixo">
+                     <div class="icon-lixo"></div>
+                 </div>
+
                 <!-- Preço do Produto -->
                 <div class="preco-produto-car">R$39,99</div>
             </div>
         </div>
+        <hr class="sep-produtos">
+        <div class="produtos-carrinho">
+            <!-- Produto 2 -->
+            <div class="produto-solo">
+                <!-- Imagem do Produto no Carrinho -->
+                <div class="img-produto-car" id="img-car-2"></div>
+
+                <!-- Nome do Produto -->
+                <p class="nome-produto-car">Exemplo Brinquedo 2</p>
+
+                <!-- Opção de aumentar ou diminuir a quantidade -->
+                <div class="icons-mais-menos">
+                    <div class="icon-menos fundo-amar"></div>
+                    <p class="quantidade fundo-amar">1</p>
+                    <div class="icon-mais fundo-amar"></div>
+                </div>
+
+                <!-- Icone lata de lixo para remover o produto do carrinho -->
+                <div class="area-lixo">
+                    <div class="icon-lixo"></div>
+                </div>
+                <!-- Preço do Produto -->
+                <div class="preco-produto-car">R$99,99</div>
+            </div>
+        </div>
+        <hr class="sep-produtos">
+        <div class="produtos-carrinho">
+            <!-- Produto 3 -->
+            <div class="produto-solo">
+                <!-- Imagem do Produto no Carrinho -->
+                <div class="img-produto-car" id="img-car-3"></div>
+
+                <!-- Nome do Produto -->
+                <p class="nome-produto-car">Exemplo Brinquedo 3</p>
+
+                <!-- Opção de aumentar ou diminuir a quantidade -->
+                <div class="icons-mais-menos">
+                    <div class="icon-menos fundo-amar"></div>
+                    <p class="quantidade fundo-amar">2</p>
+                    <div class="icon-mais fundo-amar"></div>
+                </div>
+
+                <!-- Icone lata de lixo para remover o produto do carrinho -->
+                <div class="area-lixo">
+                    <div class="icon-lixo"></div>
+                </div>
+                <!-- Preço do Produto -->
+                <div class="preco-produto-car">R$199,99</div>
+            </div>
+        </div>
+        <hr class="sep-produtos">
+        <!-- Parte de Baixo do Carrinho -->
+        <div class="caixa-total">
+            <h2 class="total">Total</h2>
+            <h2 class="valor">R$239,99</h2>
+        </div>
+        <div class="btns-embaixo">
+            <a href="/src/resumo-pedido1.html">
+                <div class="btn-finalizar-compra">Finalizar Compra</div>
+            </a>
+            <div id="btn-voltar-compra">Voltar as compras</div>
+        </div>
     </div>
+</div>
 
 <script>
     // Função para abrir/fechar o carrinho
     document.getElementById('botao-add-to-car').addEventListener('click', function() {
+        var cart = document.getElementById('cart');
+        var overlay = document.getElementById('overlay');
+        
+        // Alterna entre mostrar e esconder o carrinho e a sobreposição
+        if (cart.style.display === 'none' || cart.style.display === '') {
+            cart.style.display = 'block'; // Exibe o carrinho
+            overlay.style.display = 'block'; // Mostra a sobreposição cinza
+        } else {
+            cart.style.display = 'none'; // Esconde o carrinho
+            overlay.style.display = 'none'; // Esconde a sobreposição
+        }
+    });
+
+    document.getElementById('btn-voltar-compra').addEventListener('click', function() {
         var cart = document.getElementById('cart');
         var overlay = document.getElementById('overlay');
         

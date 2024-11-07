@@ -2,20 +2,71 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <title>Detalhes do Produto</title>
-  <base href="/">
+  <title>Resumo do Pedido</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="/src/css/styles.css">
   <link rel="stylesheet" href="/src/css/styles-confirmando-pedido.css">
 </head>
-<body>
-    <div class="main-content">
-        <!-- NavBar -->
-        <div class="menu-amarelo">
-            <a href="/src/index.html">
-                <div id="logo2"></div>
-            </a>
+    <body>
+        <div class="main-content">
+            <!-- NavBar -->
+            <div class="menu-amarelo">
+                <a href="/src/index.html">
+                    <div id="logo2"></div>
+                </a>
+                <div class="progress-bar">
+                    <div class="step" id="step1">
+                        <div class="circle active"></div>
+                        <p class="text-circle text-active">Carrinho</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" id="step2">
+                        <div class="circle"></div>
+                        <p class="text-circle">Identificação</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" id="step3">
+                        <div class="circle"></div>
+                        <p class="text-circle">Pagamento</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Conteúdo com os produtos -->
+            <div class="conteint-2">
+                <!-- Retângulo Amarelo de Referência -->
+                <div class="referencia">
+                    <div class="col-produto">Produto</div>
+                    <div class="col-preco">Preço</div>
+                    <div class="col-quantidade">Quantidade</div>
+                    <div class="col-total">Total</div>
+                </div>
+                <!-- Produtos -->
+                <div class="area-produtos">
+                    <!-- Produto para confirmar -->
+                    <div class="produto-confirmar">
+                        <div class="img-nome-conf">
+                            <!-- Imagem do Produto -->
+                            <div class="img-produto-conf"></div>
+                            <!-- Nome do Produto -->
+                            <div class="nome-produto-conf">Telefone Baby Care - Exemplo</div>
+                        </div>
+                        <!-- Preço do produto -->
+                        <div class="preco-produto-conf">R$ 39,99</div>
+                        <!-- Ícones para aumentar ou diminuir quantidade -->
+                        <div class="icons-mais-menos">
+                            <div class="icon-menos fundo-amar"></div>
+                            <p class="quantidade fundo-amar">1</p>
+                            <div class="icon-mais fundo-amar"></div>
+                        </div>
+                        <!-- Total do Produto -->
+                        <div class="total-produto-conf">R$ 39,99</div>
+                        <!-- Ícone de lixo para remover -->
+                        <div class="icon-lixo"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="resumo-pedido">resumo do pedido</div>
         </div>
-    </div>
-</body>
+    </body>
+</html>

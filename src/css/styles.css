@@ -4,6 +4,41 @@
     box-sizing: border-box;
 }
 
+/* Balão de Compra Raelizada */
+.balloon {
+    position: fixed;
+    width: 500px;
+    padding: 20px;
+    background-color: #fffa67;
+    border: 2px solid #fff200;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 20;
+    top: 80px;
+    right: 80px;
+}
+.balloon h2 {
+    font-size: 22px;
+    color: #000000;
+    margin: 0 0 10px;
+}
+.balloon p {
+    font-size: 18px;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000000;
+}
+.close-button:hover {
+    color: red;
+}
 body {
     background-color: #e4e4e4;
 }

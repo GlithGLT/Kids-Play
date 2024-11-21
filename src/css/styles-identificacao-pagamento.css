@@ -100,10 +100,11 @@
 }
 
 /* Alinhamento dos blocos */
-.bloco-pagamento {
+.bloco-entrega {
     grid-column: 2;
     grid-row: 2;
-    height: 100%;
+    width: 100%;
+    position: relative;
 }
 .bloco-resumo {
     grid-column: 4;
@@ -112,12 +113,12 @@
     font-family: roboto;
     display: flex;
     flex-direction: column;
-    height: 82%;
+    height: 95%;
 }
-/* Bloco Dados */
+/* Bloco 1 */
 .container-dados {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1/2;
     background: white;
     padding: 20px;
     border-radius: 15px;
@@ -142,7 +143,6 @@
     align-items: center;
     text-decoration: none;
     color: #000000;
-    transition: 500ms linear;
 }
 .seta {
     width: 13px;
@@ -150,7 +150,7 @@
     transform: rotate(-90deg);
 }
 
-/* Estilo Unniversal Para os Blocos */
+/* Bloco/Etapa da compra */
 .bloco {
     background-color: #fff;
     border: 2px solid rgba(0, 0, 0, 0.3);
@@ -158,70 +158,31 @@
     border-radius: 20px;
 }
 
-/* Bloco Entrega */
-.bloco-entrega {
+/* Bloco Pagamento */
+.bloco-pagamento {
     grid-column: 3;
-    grid-row: 1/4;
+    grid-row: 1/5;
+    position: relative;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-input, select {
+.payment-methods {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
     width: 100%;
-    border-radius: 20px;
+}
+.payment-methods button {
+    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 17px;
-}
-.row {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    margin: 15px 0px;
-}
-.row input {
-    flex: 1;
-}
-.complemento {
-    margin-top: 10px;
-}
-.optional {
-    font-style: italic;
-    color: #aaa;
-    margin-bottom: 10px;
-}
-.link {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-    margin-left: 5px;
-}
-.submit-button {
-    background-color: yellow;
-    color: black;
-    padding: 15px;
-    border: none;
     border-radius: 5px;
+    background-color: #f5f5f5;
     cursor: pointer;
+}
+.payment-methods button.active {
+    background-color: yellow;
     font-weight: bold;
-    width: 100%;
-    margin-top: 20px;
+    border: 1px solid #000;
 }
-
-/* Título2 do Bloco Entrega */
-.title-bloco2 {
-    margin: 20px 0px;
-    font-size: 25px;
-}
-/* Título do bloco Dados Pessoais */
-#titulo-identificacao {
-    font-family: roboto;
-    margin-bottom: 15px;
-}
-
 button {
     background-color: #fff500;
     color: rgb(0, 0, 0);
@@ -235,9 +196,93 @@ button {
     width: 100%;
     transition: 400ms linear;
 }
-
 button:hover {
     background-color: #ffea00;
+}
+.form-pagamento {
+    width: 100%;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Título do bloco Dados Pessoais */
+#titulo-identificacao {
+    font-family: roboto;
+    margin-bottom: 15px;
+}
+
+/* Estilo para os grupos de form */
+.form-group {
+    display: flex;
+    margin: 15px 0px;
+}
+
+/* Labels dos grupos de form */
+.form-group label {
+    margin: 15px 5px;
+    font-family: roboto;
+}
+.form-group-solo label {
+    font-family: roboto;
+}
+
+/* Estilo para os inputs do form */
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Estilo para os inputs text do form */
+.form-group input[type="text"] {
+    width:95%;
+    margin:5px 10px 5px 0px;
+    border-radius: 20px;
+}
+
+/* Estilo para os inputs email do form */
+.form-group-solo input[type="email"] {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Botão Finalizar Compra */
+.btn-finalizar {
+    background-color: #029a37;
+    color: rgb(238, 237, 237);
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.234);
+    margin: 0px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    transition: 400ms linear;
+}
+
+.btn-finalizar:hover {
+    background-color: #039815;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.608);
 }
 
 /* Estilo para os blocos no meio */
@@ -249,8 +294,7 @@ button:hover {
     padding: 20px;
 }
 .title-bloco {
-    margin-bottom: 20px;
-    font-size: 25px;
+    margin-bottom: 15px;
 }
 .info-bloco {
     font-weight: 500;

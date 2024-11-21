@@ -5,7 +5,7 @@
   <title>Identificação do Pedido</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/src/css/styles.css">
-  <link rel="stylesheet" href="/src/css/styles-identificando-pedidos.css">
+  <link rel="stylesheet" href="/src/css/styles-identificando-dados.css">
 </head>
     <body>
         <div class="main-content">
@@ -32,36 +32,36 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Confirmação de Pedido -->
         <div class="container-blocos">
             <div class="container-dados bloco roboto">
-
+                <!-- Título -->
                 <h2 id="titulo-identificacao">Dados Pessoais</h2>
-
+                <!-- Form -->
                 <form action="/src/identificacao-entrega.html" method="GET">
                     <div class="form-group">
                         <div>
                             <label for="primeiro-nome">Primeiro Nome:</label><br>
-                            <input type="text" id="primeiro-nome" name="primeiro-nome" required><br>
+                            <input type="text" id="primeiro-nome" name="primeiro-nome" required placeholder="Digite seu primeiro nome"><br>
                         </div>
                         <div>
                             <label for="ultimo-nome">Último Nome:</label><br>
-                            <input type="text" id="ultimo-nome" name="ultimo-nome" required><br>
+                            <input type="text" id="ultimo-nome" name="ultimo-nome" required placeholder="Digite seu último nome"><br>
                         </div>
                     </div>
                     <div class="form-group-solo">
                         <label for="email" id="emaill">E-mail:</label><br>
-                        <input type="email" id="email" name="email" required><br>
+                        <input type="email" id="email" name="email" required placeholder="Digite seu E-mail"><br>
                     </div>
                     <div class="form-group">
                         <div>
                             <label for="cpf">CPF:</label><br>
-                            <input type="text" id="cpf" name="cpf" required><br>
+                            <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF"><br>
                         </div>
-                        <div>                      
+                        <div>
                             <label for="telefone">Telefone:</label><br>
-                            <input type="text" id="telefone" name="telefone" required><br>
+                            <input type="text" id="telefone" name="telefone" required placeholder="Digite seu Telefone"><br>
                         </div>
                     </div>
                     <button type="submit">Ir para Endereço</button>

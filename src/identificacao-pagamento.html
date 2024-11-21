@@ -5,7 +5,7 @@
   <title>Identificação de Endereço</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/src/css/styles.css">
-  <link rel="stylesheet" href="/src/css/styles-identificacao-entrega.css">
+  <link rel="stylesheet" href="/src/css/styles-identificacao-pagamento.css">
 </head>
     <body>
         <div class="main-content">
@@ -21,12 +21,12 @@
                     </div>
                     <div class="line"></div>
                     <div class="step" id="step2">
-                        <div class="circle active"></div>
+                        <div class="circle passed"></div>
                         <p class="text-circle">Identificação</p>
                     </div>
                     <div class="line"></div>
                     <div class="step" id="step3">
-                        <div class="circle"></div>
+                        <div class="circle active"></div>
                         <p class="text-circle">Pagamento</p>
                     </div>
                 </div>
@@ -48,65 +48,80 @@
                 </a>
             </div>
 
-            <!-- Bloco Entrega  -->
-            <div class="bloco-entrega bloco bloco-meio roboto">
-                <h2 class="title-bloco roboto">Entrega</h2>
-                <form action="/src/identificacao-pagamento.html" method="GET">
-                    <label for="cep">CEP</label>
+            <!-- Bloco Pagamento  -->
+            <div class="bloco-pagamento bloco bloco-meio roboto">
+                <h2 class="title-bloco roboto">Pagamento</h2>
+                <div class="payment-methods">
+                    <button class="active">Cartão de Crédito</button>
+                    <button>Pix</button>
+                </div>
+            
+                <form class="form-pagamento" action="/src/index2.html" method="GET">
+                    <label for="card-number">Número do Cartão</label>
+                    <input type="text" id="card-number" placeholder="Digite o número do cartão" required>
+            
+                    <label for="installments">Parcelamentos disponíveis</label>
+                    <input type="text" id="installments" placeholder="Digite as parcelas" required>
+            
+                    <label for="card-name">Nome Impresso no Cartão</label>
+                    <input type="text" id="card-name" placeholder="Nome no cartão" required>
+            
                     <div class="row">
-                      <input type="text" id="cep" placeholder="Digite seu CEP" required>
-                      <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="link" target="_blank">
-                        Não sei meu cep
-                      </a>
+                        <div>
+                            <label for="expiry-month">Mês</label>
+                            <select id="expiry-month">
+                                <option value="">Selecione</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
                     </div>
-              
-                    <h3 class="title-bloco2">Endereço da Entrega</h3>
-              
-                    <div class="row">
-                      <div>
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
-                      </div>
-                      <div>
-                        <label for="estado">Estado:</label>
-                        <select id="estado">
-                          <option value="SP">SP</option>
-                          <option value="RJ">RJ</option>
-                          <option value="MG">MG</option>
-                          <option value="RS">RS</option>
-                          <!-- Adicione outros estados aqui -->
+                    <div>
+                        <label for="expiry-year">Ano</label>
+                        <select id="expiry-year">
+                            <option value="">Selecione</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
                         </select>
-                      </div>
                     </div>
-              
-                    <label for="bairro">Bairro:</label>
-                    <input type="text" id="bairro" placeholder="Digite seu bairro" required>
-              
+            
                     <div class="row">
-                      <div>
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" placeholder="Digite seu endereço" required>
-                      </div>
-                      <div>
-                        <label for="numero">Número:</label>
-                        <input type="text" id="numero" placeholder="Nº" required>
-                      </div>
+                        <div>
+                            <label for="security-code">Código de Segurança</label>
+                            <input type="text" id="security-code" placeholder="CVV" required>
+                        </div>
+                        <div>
+                            <label for="cpf">CPF do Titular</label>
+                            <input type="text" id="cpf" placeholder="CPF" required>
+                        </div>
                     </div>
-              
-                    <label for="complemento">Complemento</label>
-                    <input type="text" id="complemento" class="optional" placeholder="Opcional">
-              
-                    <label for="destinatario">Destinatário:</label>
-                    <input type="text" id="destinatario" placeholder="Nome do destinatário" required>
-              
-                    <button type="submit" class="submit-button">Ir Para o Pagamento</button>
-                  </form>
+            
+                    <button type="submit" class="btn-finalizar">Finalizar Compra</button>
+                </form>
             </div>
 
-            <!-- Bloco Pagamento -->
-            <div class="bloco-pagamento bloco bloco-meio">
-                <h2 class="title-bloco roboto">Pagamento</h2>
-                <p class="info-bloco roboto">Preencha primeiro os dados</p>
+            <!-- Bloco Entrega -->
+            <div class="bloco-entrega bloco bloco-meio roboto">
+                <h2 class="title-bloco roboto">Entrega</h2>
+                <h3 class="info-dados">18500-000</h3>
+                <h3 class="info-dados">Larajal Paulista</h3>
+                <h3 class="info-dados">Guilherme</h3>                
+                <a href="/src/identificacao-entrega.html" class="alterar-top roboto">
+                    <p>Alterar</p> 
+                    <img src="/src/Imagens-Kids-Play/left-arrow.png" class="seta">
+                </a>
             </div>
 
             <!-- Bloco de Resumo -->

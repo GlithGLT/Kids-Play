@@ -1,0 +1,312 @@
+.menu-amarelo {
+    list-style: none;
+    background-color: #fff500;
+    width: 95%;
+    height: 140px;
+    margin: 30px auto;
+    border: 0.5px solid #c9c9c9;
+    border-radius: 70px;
+    box-shadow: 5px 5px 5px #bebebe ;
+    position: fixed;
+    top: 0px;
+    left: 35px;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* Logo */
+#logo2 {
+    width: 190px;
+    height: 100%;
+    background-image: url('/src/Imagens-Kids-Play/logo2.png');
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+/* Estilo geral da barra de progresso */
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff500;
+    padding: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    position: relative;
+}
+.circle::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: block;
+}
+
+.text-circle {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+.text-active {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.active::before {
+    background-color: black;
+}
+.passed:before {
+    background-color: #00ad03;
+}
+
+/* Linhas brancas entre os círculos */
+.line {
+    flex-grow: 1;
+    height: 12px;
+    background-color: #ffffff;
+    margin: 0px -25px 16px -25px;
+}
+
+/* Container dos Blocos */
+.container-blocos {
+    margin: 210px auto 0px auto;
+    display: grid;
+    grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+    grid-template-rows: repeat(3, 0.4fr);
+    column-gap: 55px;
+    row-gap: 20px;
+}
+
+/* Alinhamento dos blocos */
+.bloco-entrega {
+    grid-column: 3;
+    grid-row: 1;
+}
+.bloco-pagamento {
+    grid-column: 3;
+    grid-row: 2;
+}
+.bloco-resumo {
+    grid-column: 4;
+    grid-row: 1/4;
+    padding: 20px;
+    font-family: roboto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bloco/Etapa da compra */
+.bloco {
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.153);
+    border-radius: 20px;
+}
+
+/* Bloco 1 */
+.container-dados {
+    grid-column: 2;
+    grid-row: 1/4;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-weight: 800;
+    height: 75%;
+}
+
+/* Título do bloco 1 */
+#titulo-identificacao {
+    font-family: roboto;
+    margin-bottom: 15px;
+}
+
+/* Estilo para os grupos de form */
+.form-group {
+    display: flex;
+    margin: 15px 0px;
+}
+
+/* Labels dos grupos de form */
+.form-group label {
+    margin: 15px 5px;
+    font-family: roboto;
+}
+.form-group-solo label {
+    font-family: roboto;
+}
+
+/* Estilo para os inputs do form */
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Estilo para os inputs text do form */
+.form-group input[type="text"] {
+    width:95%;
+    margin:5px 10px 5px 0px;
+    border-radius: 20px;
+}
+
+/* Estilo para os inputs email do form */
+.form-group-solo input[type="email"] {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #fff500;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 0px auto;
+    border: 2px solid rgba(0, 0, 0, 0.083);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    transition: 400ms linear;
+}
+
+button:hover {
+    background-color: #ffea00;
+}
+
+/* Estilo para os blocos no meio */
+.bloco-meio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 20px;
+}
+.title-bloco {
+    margin-bottom: 20px;
+}
+.info-bloco {
+    font-weight: 500;
+    color: gray;
+}
+
+/* Bloco Resumo */
+.produto-resumo-ident {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.4fr 1fr;
+    row-gap: 2px;
+}
+
+.title-resumo {
+    margin-bottom: 15px;
+}
+
+/* Imagem do produto no resumo */
+.img-produto-resumo {
+    background-image: url('/src/Imagens-Kids-Play/brinquedo-celular.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.304);
+    width: 70px;
+    height: 70px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+/* Nome */
+.nome-produto-resumo-ident {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Preço */
+.preco-produto-resumo-ident {
+    grid-column: 2;
+    grid-row: 2;
+    color: rgb(0, 155, 26);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.linha2 {
+    margin: 10px 0px;
+}
+
+.resumo-pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    background-color: #ffffff;
+    padding: 25px; 
+    border: 1.5px solid rgba(0, 0, 0, 0.351);
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.grid-total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    gap: 12px;
+}
+
+.total-text ,.total-text2 {
+    color: #2d2c2c;
+}
+.total-text2 {
+    text-align: right;
+    font-size: 20px;
+    color: #535252;
+}
+.total-text {
+    font-size: 23px;
+}
+
+.resumo-linha {
+    width: 100%;
+    margin: 20px 0px;
+    border: 1.5px solid rgba(0, 0, 0, 0.484);
+}
+
+.linha-total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.total-text3 {
+    text-align: right;
+    font-size: 22px;
+    color: #00ad03;
+}

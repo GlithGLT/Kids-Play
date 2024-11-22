@@ -32,7 +32,7 @@
         </li>
         <!-- Favoritos -->
         <li>
-            <a href="/src/favoritos.html">
+            <a href="/src/sem-favoritos.html">
                 <img src="/src/Imagens-Kids-Play/icon-coração.png" alt="" class="itens-menus icons">
             </a>
         </li>
@@ -168,6 +168,14 @@
     <div class="option"><img src="/src/Imagens-Kids-Play/icon-controle.png" alt="" class="icons-categorias">Jogos</div>
   </div>
 
+  <!-- Opções Contas -->
+  <div id="options-acount" class="roboto">
+    <h2 class="title">Escolha uma forma de login</h2>
+    <div class="option-acount">E-mail</div>
+    <div class="option-acount">E-mail e Senha</div>
+    <div class="option-acount">Google</div>
+    <div class="option-acount">Facebook</div>
+  </div>
   <!-- JavaScript -->
   <script>
     // Função que mostra as categorias quando o botão é clicado
@@ -178,6 +186,16 @@
       } else {
         rectangle.style.display = 'none'; // Esconder o retângulo se já estiver visível
       }
+    });
+
+    // Função que mostra as categorias quando o botão é clicado
+    document.getElementById('user').addEventListener('click', function() {
+    var rectangle = document.getElementById('options-acount');
+    if (rectangle.style.display === 'none' || rectangle.style.display === '') {
+    rectangle.style.display = 'block'; // Mostrar o retângulo
+    } else {
+    rectangle.style.display = 'none'; // Esconder o retângulo se já estiver visível
+    }
     });
   </script>
   

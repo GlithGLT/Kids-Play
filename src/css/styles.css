@@ -130,6 +130,9 @@ body {
     width: 50px;
     height: 50px;
 }
+#user:hover {
+    cursor: pointer;
+}
 #zap {
     width: 50px;
     height: 50px;
@@ -254,8 +257,6 @@ body {
     background-image: url('/src/Imagens-Kids-Play/icon-add-to-car.png');
 }
 
-
-
 /* Estilo do retângulo */
 #options-rectangle {
     width: 230px;
@@ -272,11 +273,53 @@ body {
     z-index:11;
 }
 
+#options-acount {
+    height: auto;
+    background-color: #fffeee;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    display: none; /* Esconder o retângulo por padrão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 71px;
+    right: 160px;
+    z-index:11;
+}
+.option-acount {
+    font-size: 25px;
+    background-color: #fffb8f;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    padding: 2px 20px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms linear;
+}
+.option-acount:hover {
+    background-color: #fff200;
+}
+.title {
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
 /* icones dentro do retângulo */
 .icons-categorias {
     width: 40px;
     height: 40px;
     margin-right: 5px;
+}
+
+#link {
+    text-decoration: none;
 }
 
 /* Estilo das opções dentro do retângulo */
@@ -298,4 +341,8 @@ body {
 
 .roboto {
     font-family: roboto;
+}
+
+a {
+    text-decoration: none;
 }

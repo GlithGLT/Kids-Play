@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <title>Kidsplay</title>
+  <title>Pedidos a Caminho</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -53,8 +53,12 @@
 
   <div class="conteint">
     <ul class="menu-options-fav">
-        <li class="item-menu-option-fav"><h3>Pedidos</h3></li>
-        <li class="item-menu-option-fav"><h3>Dados Pessoais</h3></li>
+        <a href="/src/pedidos-caminho.html">
+            <li class="item-menu-option-fav active"><h3>Pedidos</h3></li>
+        </a>
+        <a href="/src/dados-pessoais.html">
+            <li class="item-menu-option-fav"><h3>Dados Pessoais</h3></li>
+        </a>
         <li class="item-menu-option-fav"><h3>Endereços</h3></li>
         <li class="item-menu-option-fav"><h3>Cartões</h3></li>
         <li class="item-menu-option-fav"><h3>Autenticação</h3></li>
@@ -67,10 +71,12 @@
                 <p class="voltar">Voltar</p>
             </div>
         </div>
-        <h1 class="titulo-pag">Lista de Desejos</h1>
-        <div class="no-toys">
-            <img src="/src/Imagens-Kids-Play/icon-urso-favs.png" alt="">
-            <h5 class="texto-no-toys">Você ainda não adicionou brinquedos a sua lista de desejos</h5>
+        <!-- MUDAR PARA SEM PEDIDOS -->
+        <h1 class="titulo-pag">Pedidos a Caminho</h1>
+        <div class="no-pedidos">
+            <a href="/src/pedidos-caminho.html">
+                <img src="/src/Imagens-Kids-Play/img-sem-pedidos.png" alt="">
+            </a>
         </div>
     </div>
   </div>

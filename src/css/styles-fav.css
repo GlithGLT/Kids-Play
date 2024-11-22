@@ -46,7 +46,7 @@
     border: 3px solid black;
     border-radius: 10px;
 }
-.item-menu-option-fav:last-child {
+.active {
     background-color: #fff41a;
 }
 
@@ -54,6 +54,53 @@
 .favoritos {
     margin-top: 65px;
     color: white;
+}
+
+/* Todos os Produtos */
+.products-fav {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+/* Apenas um Produto */
+.product-fav {
+    width: 25%;
+    display: inline-block;
+    transition: 200ms linear;
+    position: relative;
+}
+
+.product-image-fav {
+    height: 260px;
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid gray;
+    transition: 200ms linear;
+}
+.product-image-fav:hover {
+    cursor: pointer;
+    transform:translate(0px, -2px);
+    border: 3px solid #edb600;
+}
+
+.preco-fav {
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    display: inline;
+    color: black;
+}
+
+#remove-fav-image {
+    background-image: url('/src/Imagens-Kids-Play/icone-remove-fav.jpg');
+    width: 30px;
+    height: 30px;
 }
 
 .btn-voltar {
@@ -98,7 +145,7 @@
     font-weight: 600;
 }
 
-/* Sem Brinquedos */
+/* Sem Brinquedos e Sem Pedidos*/
 .no-toys {
     display: flex;
     justify-content: center;
@@ -108,6 +155,16 @@
 .no-toys img {
     height: 220px;
     width: 220px;
+}
+.no-pedidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.no-pedidos img {
+    height: 190px;
+    width: 100%;
 }
 
 /* Texto sem brinquedos */
@@ -122,4 +179,18 @@
     padding: 50px;
     backdrop-filter: blur(20px);
     -wekbit-backdrop-filter: blur(20px) ;
+}
+
+
+/* Produtos a Caminho */
+.area-pedidos {
+    width: 100%;
+}
+.barra-superior {
+    color: #121212;
+    background-color: #fff96f;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    display: flex ;
+    width: 100%;
 }
